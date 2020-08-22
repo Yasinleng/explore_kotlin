@@ -1,0 +1,12 @@
+isLibs = false
+
+apply from: "../config.gradle"
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:+'
+    implementation 'androidx.constraintlayout:constraintlayout:+'
+    implementation project(path: ':pager')
+    implementation project(path: ':base')
+}

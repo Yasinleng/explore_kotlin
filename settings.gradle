@@ -1,0 +1,2 @@
+include ':app', ':base', ':pager'
+rootProject.name='explore_kotlin'
