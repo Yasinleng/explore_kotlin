@@ -11,11 +11,14 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+        var count=0
 
         result.setOnClickListener {
-            val params=Params().put("1",32).put("2",false).put("3","测试")
-            PagerManager.instance.send(MainActivity::class.java,params)
-            finish()
+            PagerManager.instance.send(MainActivity::class.java,Params.obtain().put("1",32).put("2",false).put("3","测试${count++}"))
+            PagerManager.instance.send(MainActivity::class.java,Params.obtain().put("1",32).put("2",false).put("3","测试${count++}"))
+            PagerManager.instance.send(MainActivity::class.java,Params.obtain().put("1",32).put("2",false).put("3","测试${count++}"))
+
+//            finish()
         }
     }
 }

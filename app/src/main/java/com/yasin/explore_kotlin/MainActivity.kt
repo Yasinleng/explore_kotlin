@@ -10,7 +10,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), ResultCallback {
     override fun result(result: Params): Boolean {
-        Log.i("id1234",result.toString())
+
+        val a=result.get("1")
+        val b=result.get("2")
+//        val c=result.get("3")
+
+        Log.i("id1234","a = $a  b = $b c = ")
+
 
         return true
     }

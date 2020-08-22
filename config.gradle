@@ -76,10 +76,14 @@ dependencies {
     implementation libs.constraintlayout
     //协程库
     implementation libs.kotlinx_coroutines_core
+    //组件化
+    implementation 'com.billy.android:cc:2.1.6'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
 }
 
 
